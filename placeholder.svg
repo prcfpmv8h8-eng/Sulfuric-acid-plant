@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2a37"/>
+      <stop offset="1" stop-color="#06151d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)"/>
+  <g fill="none" stroke="#8ee6ef" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" opacity=".85">
+    <rect x="300" y="180" width="600" height="440" rx="45"/>
+    <circle cx="500" cy="360" r="70"/>
+    <path d="M360 560l170-150 115 100 95-85 100 135"/>
+  </g>
+  <text x="600" y="705" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" fill="#a9c5cf">
+    Equipment image
+  </text>
+</svg>
