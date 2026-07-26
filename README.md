@@ -1,19 +1,30 @@
-# Sulfuric Acid Plant Equipment Database
+# שלב נתונים 2 – כרטיס ציוד מלא ותמונות
 
-אתר ראשוני למאגר ציוד של מתקן חומצה גופרתית.
+נוספה אפשרות לפתוח כל יחידת ציוד ולקבל מסך פרטים מלא.
 
-## קבצים
+## שדות חדשים ב-equipment.json
 
-- `index.html` – מבנה האתר
-- `style.css` – עיצוב
-- `script.js` – התנהגות בסיסית
-- `aicl-logo.webp` – לוגו האתר
+- `location` – מיקום בשטח
+- `operation` – אופן הפעלה
+- `commonFaults` – תקלות נפוצות
+- `safety` – מידע בטיחותי
+- `additionalInfo` – מידע נוסף
+- `image` – נתיב לתמונה
 
-## הפעלה ב-GitHub Pages
+## הוספת תמונה ליחידת ציוד
 
-1. העלה את כל הקבצים לשורש המאגר.
-2. היכנס ל-Settings.
-3. בחר Pages.
-4. תחת Source בחר Deploy from a branch.
-5. בחר `main` ו-`/root`.
-6. שמור.
+1. העלה את התמונה לתיקייה `images` ב-GitHub.
+2. מומלץ לתת שם באנגלית ללא רווחים, לדוגמה:
+   `P1-446A.jpg`
+3. ברשומת הציוד בתוך `equipment.json` הזן:
+   `"image": "images/P1-446A.jpg"`
+
+כאשר אין תמונה, האתר מציג תמונת ברירת מחדל.
+
+## קבצים להעלאה/החלפה
+
+- `index.html`
+- `style.css`
+- `script.js`
+- `equipment.json`
+- תיקיית `images` ובתוכה `placeholder.svg`
